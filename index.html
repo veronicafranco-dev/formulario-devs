@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário para DEV's</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>    
+    <header class="cabecalho">
+        <h1>Cadastro de DEV's</h1>
+        <h2>Preencha com suas informações</h2>
+    </header>
+
+    <main>
+        <form class="formulario">
+
+            <section class="dadospessoais">
+                <fieldset>
+                    <div class="dadospessoais__nome">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" id="nome" required>
+                    </div>
+
+                    <div class="dadospessoais__nome">
+                        <label for="sobrenome"><strong>Sobrenome</strong></label>
+                        <input type="text" id="sobrenome" required>
+                    </div>
+                </fieldset>
+
+                <div class="dadospessoais__email">
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="email" id="email" required>
+                </div>
+            </section>
+
+            <section class="dadosprofissionais">
+                
+                <div id="devside">
+                    <div class="question">
+                        <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                    </div>
+                    
+                    <div class="answer">
+                        <input type="radio" id="front" name="devside" value="frontend"> Front-end
+                        <label for="front"></label>
+                    </div>
+                    
+                    <div class="answer">
+                        <input type="radio" id="back" name="devside" value="backend"> Back-end
+                        <label for="back"></label>
+                    </div>
+                    
+                    <div class="answer">
+                        <input type="radio" id="fullstack" name="devside" value="fullstack"> Full-stack
+                        <label for="fullstack"></label>
+                    </div>
+                </div>
+
+                <div id="senioridade">
+                    <div class="question">
+                        <label for="senioridade">
+                            <strong>Senioridade</strong>
+                        </label>
+                    </div>
+
+                    <select name="senioridade" id="senioridade">
+                        <option value="" selected disabled>Selecione</option>
+
+                        <option value="junior" id="senioridade">Júnior</option>
+
+                        <option value="pleno" id="senioridade">Pleno</option>
+
+                        <option value="senior" id="senioridade">Sênior</option>
+                    </select>
+                </div>
+
+                <div id="tecnologias">
+                    <div class="question">
+                        <label>
+                            <strong>Selecione as tecnologias que você utiliza:</strong>
+                        </label>
+                    </div>
+
+                    <div id="tecnologias__options">
+
+                        <div class="answer">
+                            <input type="checkbox" name="tecnologia1" id="tecnologia1" value="html">
+                            <label for="tecnologia1">HTML</label>
+                        </div>
+
+                        <div class="answer">
+                            <input type="checkbox" name="tecnologia2" id="tecnologia2" value="css">
+                            <label for="tecnologia2">CSS</label>
+                        </div>
+                        
+                        <div class="answer">
+                            <input type="checkbox" name="tecnologia3" id="tecnologia3" value="javascript">
+                            <label for="tecnologia3">JavaScript</label>
+                        </div>
+                        
+                        <div class="answer">
+                            <input type="checkbox" name="tecnologia4" id="tecnologia4" value="tecnologia4">
+                            <label for="tecnologia4">C#</label>
+                        </div>
+                        
+                        <div class="answer">
+                            <input type="checkbox" name="tecnologia5" id="tecnologia5" value="python">
+                            <label for="tecnologia5">Python</label>
+                        </div>
+                        
+                        <div class="answer">
+                            <input type="checkbox" name="tecnologia6" id="tecnologia6" value="java">
+                            <label for="tecnologia6">Java</label>
+                        </div>
+                        
+                        <div class="answer">
+                            <input type="checkbox" name="tecnologia7" id="tecnologia7" value="php">
+                            <label for="tecnologia7">PHP</label>
+                        </div>
+                    </div> 
+                </div>
+
+                <div id="experiencia">
+                    <div class="question">
+                        <label for="mensagem">
+                            <strong>Conte um pouco mais sobre a sua experiência:</strong>
+                        </label>
+                    </div>
+
+                    <textarea name="experiencia" id="mensagem" maxlength="1000" required></textarea>
+                </div>
+
+            </section>
+    
+        </form>
+        <div class="botoes">
+            <button type="submit" id="send">Concluir e enviar</button>
+            <button type="reset" id="clean">Limpar tudo</button>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Verônica Franco</p>
+        &copy; 2024 - Todos os direitos reservados.
+    </footer>
+</body>
+</html>
